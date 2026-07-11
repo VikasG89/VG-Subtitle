@@ -1,9 +1,10 @@
 #include "SegmentAssembler.h"
 #include "TimestampGenerator.h"
+#include "whisper.h"
 
 namespace vg::subtitle::whisper {
 
-std::vector<WhisperSegment> SegmentAssembler::assemble(struct whisper_context* ctx) {
+    std::vector<WhisperSegment> SegmentAssembler::assemble(struct ::whisper_context* ctx) {
     std::vector<WhisperSegment> segments;
     int n_segments = whisper_full_n_segments(ctx);
 

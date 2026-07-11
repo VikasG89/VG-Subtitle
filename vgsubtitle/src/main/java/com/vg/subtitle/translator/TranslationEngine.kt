@@ -1,6 +1,6 @@
 package com.vg.subtitle.translator
 
-import com.vg.subtitle.recognizer.Segment
+import com.vg.subtitle.api.model.Segment
 
 /** Offline translation engine. Implementations can wrap ML Kit, ONNX, or custom local models. */
 interface TranslationEngine {

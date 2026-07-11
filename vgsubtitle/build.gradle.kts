@@ -71,9 +71,9 @@ configure<PublishingExtension> {
             version = "1.0.0"
 
             pom {
-                name.set("VG Subtitle & Audio AI Engine")
+                name.set("VG-Subtitle")
                 description.set("Offline subtitle generation, translation, and AI-driven audio processing for Android.")
-                url.set("https://github.com/vg-player/vg-subtitle-audio-ai-engine")
+                url.set("https://github.com/VikasG89/VG-Subtitle")
                 licenses {
                     license {
                         name.set("The Apache License, Version 2.0")
@@ -82,8 +82,8 @@ configure<PublishingExtension> {
                 }
                 developers {
                     developer {
-                        id.set("vgplayer")
-                        name.set("VG Player Team")
+                        id.set("myTechnology024")
+                        name.set("myTechnology024 Team")
                     }
                 }
             }

@@ -8,7 +8,8 @@ import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
-import com.vg.subtitle.api.SubtitleConfig
+import com.vg.subtitle.api.config.SubtitleConfig
+import com.vg.subtitle.api.model.TaskState
 import com.vg.subtitle.database.SubtitleTask
 import com.vg.subtitle.database.VGSubtitleDatabase
 import com.vg.subtitle.repository.SubtitleRepository
@@ -25,14 +26,15 @@ class SubtitleWorker(
         val taskId = inputData.getString(KEY_TASK_ID) ?: UUID.randomUUID().toString()
         val dao = VGSubtitleDatabase.get(applicationContext).taskDao()
         return runCatching {
-            dao.upsert(SubtitleTask(taskId, video, output, com.vg.subtitle.api.TaskState.RUNNING))
-            SubtitleRepository(applicationContext).generateSubtitle(video, output, SubtitleConfig(), onProgress = {
+            dao.upsert(SubtitleTask(taskId, video, output, TaskState.RUNNING))
+            SubtitleRepository(applicationContext).generateSubtitle(video, output,
+                SubtitleConfig(), onProgress = {
                 setProgressAsync(Data.Builder().putInt(KEY_PROGRESS, it.percent).build())
             }, onSegment = {})
-            dao.updateState(taskId, com.vg.subtitle.api.TaskState.COMPLETED, 100, System.currentTimeMillis(), null)
+            dao.updateState(taskId, TaskState.COMPLETED, 100, System.currentTimeMillis(), null)
             Result.success()
         }.getOrElse {
-            dao.updateState(taskId, com.vg.subtitle.api.TaskState.FAILED, 0, System.currentTimeMillis(), it.message)
+            dao.updateState(taskId, TaskState.FAILED, 0, System.currentTimeMillis(), it.message)
             Result.retry()
         }
     }

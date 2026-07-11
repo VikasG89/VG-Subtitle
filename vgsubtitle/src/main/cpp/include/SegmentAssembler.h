@@ -2,6 +2,7 @@
 #define SEGMENT_ASSEMBLER_H
 
 #include "WhisperRuntime.h"
+#include "whisper.h"
 #include <vector>
 
 namespace vg::subtitle::whisper {

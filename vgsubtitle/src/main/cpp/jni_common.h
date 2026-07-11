@@ -20,6 +20,7 @@ extern std::mutex g_mgmt_mutex;
 
 // Utility functions
 std::string jstring_to_string(JNIEnv *env, jstring jstr);
+
 void throw_java(JNIEnv *env, const char *message, int error_code = 0);
 
 #endif // JNI_COMMON_H

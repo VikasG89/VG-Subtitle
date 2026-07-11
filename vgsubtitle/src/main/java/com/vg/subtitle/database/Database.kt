@@ -2,7 +2,7 @@ package com.vg.subtitle.database
 
 import android.content.Context
 import androidx.room.*
-import com.vg.subtitle.api.TaskState
+import com.vg.subtitle.api.model.TaskState
 import com.vg.subtitle.database.dao.*
 import com.vg.subtitle.database.entity.*
 import kotlinx.coroutines.flow.Flow

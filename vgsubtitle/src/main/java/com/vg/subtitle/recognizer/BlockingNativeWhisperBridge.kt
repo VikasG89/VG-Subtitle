@@ -2,6 +2,9 @@ package com.vg.subtitle.recognizer
 
 import android.content.Context
 import androidx.annotation.Keep
+import com.vg.subtitle.api.model.Segment
+import com.vg.subtitle.model.manager.ModelManager
+import com.vg.subtitle.native.bridge.NativeWhisperBridge
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
 import kotlinx.coroutines.asCoroutineDispatcher

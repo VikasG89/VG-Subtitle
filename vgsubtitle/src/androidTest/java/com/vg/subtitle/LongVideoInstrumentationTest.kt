@@ -3,7 +3,7 @@ package com.vg.subtitle
 import android.os.Debug
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.vg.subtitle.api.SubtitleConfig
+import com.vg.subtitle.api.config.SubtitleConfig
 import com.vg.subtitle.extractor.VideoAudioExtractor
 import java.io.File
 import org.junit.Assert.assertTrue

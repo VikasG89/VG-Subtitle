@@ -1,6 +1,7 @@
 package com.vg.subtitle.subtitle
 
-import com.vg.subtitle.recognizer.Segment
+import com.vg.subtitle.api.model.Segment
+
 
 class SubtitleMerger {
     fun mergeCloseSegments(segments: List<Segment>, maxGapMs: Long = 250L): List<Segment> {

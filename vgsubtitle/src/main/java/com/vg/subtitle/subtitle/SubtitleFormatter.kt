@@ -1,8 +1,8 @@
 package com.vg.subtitle.subtitle
 
 import com.vg.subtitle.api.config.SubtitleConfig
+import com.vg.subtitle.api.model.Segment
 import com.vg.subtitle.api.model.SubtitleFormat
-import com.vg.subtitle.recognizer.Segment
 
 /**
  * Responsible for formatting a list of [Segment] objects into various subtitle file formats.

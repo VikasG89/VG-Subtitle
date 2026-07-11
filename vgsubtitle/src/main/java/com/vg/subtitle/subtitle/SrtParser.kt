@@ -1,6 +1,6 @@
 package com.vg.subtitle.subtitle
 
-import com.vg.subtitle.recognizer.Segment
+import com.vg.subtitle.api.model.Segment
 import java.io.File
 
 class SrtParser {

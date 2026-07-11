@@ -1,6 +1,7 @@
 package com.vg.subtitle.subtitle
 
-import com.vg.subtitle.recognizer.Segment
+import com.vg.subtitle.api.model.Segment
+
 
 class WebVttWriter {
     fun format(segments: List<Segment>): String = buildString {

@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Force Release build for maximum performance
-set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build" FORCE)
+if(NOT CMAKE_BUILD_TYPE)
+    set(CMAKE_BUILD_TYPE Release)
+endif()
 
 # Enable aggressive compiler optimizations
 if(MSVC)
@@ -35,19 +37,55 @@ endif()
 
 add_subdirectory(whisper.cpp whisper-build)
 
-file(GLOB_RECURSE SRC_FILES
-    src/*.cpp
-    vad/src/*.cpp
-    *.cpp
+message(STATUS "VGSubtitle sources:")
+foreach(src ${SRC_FILES})
+    message(STATUS "  ${src}")
+endforeach()
+
+set(ROOT_CPP
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_bridge.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_cache.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_engine.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_exception.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_export.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_ffmpeg.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_inference.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_logging.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_media_probe.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_model.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_model_loader.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/jni_utils.cpp
+)
+
+
+file(GLOB_RECURSE ENGINE_CPP
+        "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+)
+
+file(GLOB_RECURSE VAD_CPP
+        "${CMAKE_CURRENT_SOURCE_DIR}/vad/src/*.cpp"
+)
+
+set(SRC_FILES
+        ${ROOT_CPP}
+        ${ENGINE_CPP}
+        ${VAD_CPP}
 )
 
 add_library(vgsubtitle SHARED ${SRC_FILES})
 
+target_compile_options(vgsubtitle PRIVATE
+        -O3
+        -ffast-math
+)
+
 target_include_directories(vgsubtitle PRIVATE
-        include
-        vad/include
-        whisper.cpp/include
-        whisper.cpp/ggml/include)
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/vad/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/whisper.cpp/include
+        ${CMAKE_CURRENT_SOURCE_DIR}/whisper.cpp/ggml/include
+        )
 
 target_link_libraries(vgsubtitle PRIVATE
         whisper

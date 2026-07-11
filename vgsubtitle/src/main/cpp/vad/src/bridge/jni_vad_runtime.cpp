@@ -5,11 +5,11 @@
 using namespace vg::subtitle::vad;
 
 // Declared in jni_vad_config.cpp
-VadConfig java_to_native_vad_config(JNIEnv* env, jobject config_obj);
+VadConfig java_to_native_vad_config(JNIEnv *env, jobject config_obj);
 
 extern "C" JNIEXPORT jlong JNICALL
 Java_com_vg_subtitle_native_bridge_NativeVadBridge_initializeVad(
-        JNIEnv * env,
+        JNIEnv *env,
         jobject,
         jobject config_obj) {
     try {
@@ -17,7 +17,7 @@ Java_com_vg_subtitle_native_bridge_NativeVadBridge_initializeVad(
         auto runtime = VadRuntime::create(config);
         auto session = runtime->createSession();
         return reinterpret_cast<jlong>(session.release());
-    } catch (const std::exception & e) {
+    } catch (const std::exception &e) {
         throw_java(env, e.what(), 1);
         return 0;
     }
@@ -25,7 +25,7 @@ Java_com_vg_subtitle_native_bridge_NativeVadBridge_initializeVad(
 
 extern "C" JNIEXPORT void JNICALL
 Java_com_vg_subtitle_native_bridge_NativeVadBridge_releaseVad(
-        JNIEnv * env,
+        JNIEnv *env,
         jobject,
         jlong session_handle) {
     auto session = reinterpret_cast<VadSession *>(session_handle);

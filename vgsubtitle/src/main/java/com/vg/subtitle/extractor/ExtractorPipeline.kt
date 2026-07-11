@@ -1,13 +1,12 @@
 package com.vg.subtitle.extractor
 
 import android.media.AudioFormat
-import android.media.AudioTrack
 import android.media.MediaCodec
 import android.media.MediaExtractor
 import android.media.MediaFormat
-import com.vg.subtitle.api.CorruptedVideoException
-import com.vg.subtitle.api.SubtitleProgress
-import com.vg.subtitle.api.UnsupportedCodecException
+import com.vg.subtitle.api.exception.CorruptedVideoException
+import com.vg.subtitle.api.exception.UnsupportedCodecException
+import com.vg.subtitle.api.model.SubtitleProgress
 import com.vg.subtitle.utils.TimeUtils
 import java.io.File
 import java.io.FileInputStream

@@ -1,7 +1,8 @@
 package com.vg.subtitle.audio
 
-import com.vg.subtitle.api.AudioGenerationException
-import com.vg.subtitle.recognizer.Segment
+import com.vg.subtitle.api.exception.AudioGenerationException
+import com.vg.subtitle.api.model.Segment
+
 import java.io.File
 
 interface TextToSpeechEngine {
@@ -14,7 +15,11 @@ class AudioGenerator(private val engine: TextToSpeechEngine) {
         return segments.map { segment ->
             val output = File(outputDir, "${language}_${segment.index}.wav")
             runCatching { engine.synthesize(segment, language, output) }
-                .getOrElse { throw AudioGenerationException("Failed to synthesize segment ${segment.index}.", it) }
+                .getOrElse { throw AudioGenerationException(
+                    "Failed to synthesize segment ${segment.index}.",
+                    it
+                )
+                }
         }
     }
 }

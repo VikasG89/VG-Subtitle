@@ -3,7 +3,7 @@ package com.vg.subtitle.translator
 import com.google.mlkit.common.model.DownloadConditions
 import com.google.mlkit.nl.translate.Translation
 import com.google.mlkit.nl.translate.TranslatorOptions
-import com.vg.subtitle.recognizer.Segment
+import com.vg.subtitle.api.model.Segment
 import kotlinx.coroutines.tasks.await
 
 /**

@@ -1,6 +1,6 @@
 #include "SileroVadSession.h"
-#include "SegmentBuilder.h"
 #include <cmath>
+#include <vad/src/segmentation/SegmentBuilder.h>
 
 namespace vg::subtitle::vad {
 

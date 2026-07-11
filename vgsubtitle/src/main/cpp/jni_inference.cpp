@@ -30,13 +30,25 @@ Java_com_vg_subtitle_native_bridge_NativeWhisperBridge_transcribeWhisper(
         jclass segment_cls = env->FindClass("com/vg/subtitle/api/model/Segment");
         jmethodID segment_ctor = env->GetMethodID(segment_cls, "<init>", "(IJJLjava/lang/String;Ljava/lang/String;F)V");
 
-        for (const auto& s : results) {
-            jobject segment = env->NewObject(segment_cls, segment_ctor,
-                s.index, s.t0, s.t1,
-                env->NewStringUTF(s.text.c_str()),
-                env->NewStringUTF(language), // Using input language for now
-                s.confidence);
+        jstring jLanguage = language; // or env->NewStringUTF(lang.c_str()) if you need a copy
+
+        for (const auto &s : results) {
+            jstring jText = env->NewStringUTF(s.text.c_str());
+
+            jobject segment = env->NewObject(
+                    segment_cls,
+                    segment_ctor,
+                    s.index,
+                    s.t0,
+                    s.t1,
+                    jText,
+                    jLanguage,
+                    s.confidence
+            );
+
             env->CallBooleanMethod(list_obj, list_add, segment);
+
+            env->DeleteLocalRef(jText);
             env->DeleteLocalRef(segment);
         }
 
