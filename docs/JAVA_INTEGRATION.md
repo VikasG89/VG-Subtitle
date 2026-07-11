@@ -19,7 +19,7 @@ SubtitleConfig config = new SubtitleConfig(
     16
 );
 
-VGSubtitle engine = new VGSubtitle(context, config);
+VGSubtitleEngine engine = new VGSubtitleEngine(context, config);
 engine.setSpeechRecognizerEngine(
     WhisperEngines.fromBlockingBridge(context, myBlockingWhisperBridge)
 );

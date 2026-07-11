@@ -8,7 +8,7 @@ import com.vg.subtitle.audio.AudioGenerator
 import com.vg.subtitle.audio.AudioSynchronizer
 import com.vg.subtitle.audio.TextToSpeechEngine
 import com.vg.subtitle.extractor.VideoAudioExtractor
-import com.vg.subtitle.recognizer.ModelManager
+import com.vg.subtitle.model.manager.ModelManager
 import com.vg.subtitle.api.model.Segment
 import com.vg.subtitle.recognizer.SpeechRecognizerEngine
 import com.vg.subtitle.recognizer.WhisperEngine

@@ -1,6 +1,6 @@
 # API Documentation
 
-## `VGSubtitle`
+## `VGSubtitleEngine`
 
 - `generateSubtitle(videoPath, outputPath, listener, config)`: extracts audio, transcribes offline speech, formats subtitles, and writes the requested subtitle output.
 - `translateSubtitle(subtitlePath, outputDirectory, sourceLanguage, targetLanguages, listener, config)`: translates subtitle text while preserving timestamps.

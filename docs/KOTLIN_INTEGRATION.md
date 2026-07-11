@@ -7,7 +7,7 @@ val config = SubtitleConfig(
     model = WhisperModel.BASE,
 )
 
-val engine = VGSubtitle(context, config)
+val engine = VGSubtitleEngine(context, config)
     .setSpeechRecognizerEngine(myOfflineRecognizer)
     .setTranslationEngine(myOfflineTranslator)
     .setTextToSpeechEngine(myOfflineTts)

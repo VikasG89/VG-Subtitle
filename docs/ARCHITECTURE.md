@@ -2,7 +2,7 @@
 
 ```mermaid
 flowchart LR
-    API["VGSubtitle Java API"] --> Repo["SubtitleRepository"]
+    API["VGSubtitleEngine Java API"] --> Repo["SubtitleRepository"]
     Repo --> Extract["VideoAudioExtractor"]
     Extract --> Decode["MediaExtractor + MediaCodec"]
     Decode --> PCM["PCMConverter 16 kHz mono PCM16"]
@@ -30,4 +30,4 @@ flowchart LR
 
 ## Dependency Injection
 
-`VGSubtitle` exposes setters for recognizer, translator, and TTS engines. Apps using Hilt/Koin/manual DI can construct the concrete engines and install them before starting work.
+`VGSubtitleEngine` exposes setters for recognizer, translator, and TTS engines. Apps using Hilt/Koin/manual DI can construct the concrete engines and install them before starting work.

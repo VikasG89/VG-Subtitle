@@ -3,6 +3,10 @@ package com.vg.subtitle.recognizer
 import com.vg.subtitle.api.config.SubtitleConfig
 import com.vg.subtitle.api.exception.RecognitionException
 import com.vg.subtitle.api.model.WhisperModel
+import com.vg.subtitle.api.model.Segment
+import com.vg.subtitle.model.manager.ModelManager
+import com.vg.subtitle.native.bridge.NativeWhisper
+import com.vg.subtitle.native.bridge.NativeWhisperBridge
 import java.io.File
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -89,16 +93,3 @@ class WhisperEngine @JvmOverloads constructor(
     }
 }
 
-/**
- * Interface for the native Whisper engine bridge.
- */
-interface NativeWhisperBridge {
-    /** Loads a model from the given path. */
-    suspend fun loadModel(modelPath: String)
-    /** Checks if a model is currently loaded. */
-    fun isModelLoaded(): Boolean
-    /** Detects language from a PCM file. */
-    suspend fun detectLanguage(pcmPath: String): String
-    /** Transcribes a PCM file. */
-    suspend fun transcribe(pcmPath: String, chunkDurationMs: Long, language: String = "auto"): List<Segment>
-}
