@@ -1,0 +1,67 @@
+{
+  "buildFiles": [
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\cmake\\build-info.cmake",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\cmake\\parakeet-config.cmake.in",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\cmake\\whisper-config.cmake.in",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\cmake\\common.cmake",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\cmake\\ggml-config.cmake.in",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\src\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\src\\ggml-cpu\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\src\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\gurav\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\gurav\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "whisper::@5c4c08eb26cb9fe5feee": {
+      "artifactName": "whisper",
+      "abi": "x86",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86\\whisper-build\\src\\libwhisper.a",
+      "runtimeFiles": []
+    },
+    "parakeet::@5c4c08eb26cb9fe5feee": {
+      "artifactName": "parakeet",
+      "abi": "x86",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86\\whisper-build\\src\\libparakeet.a",
+      "runtimeFiles": []
+    },
+    "ggml::@fe13e92dabd0655ddef2": {
+      "artifactName": "ggml",
+      "abi": "x86",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86\\whisper-build\\ggml\\src\\libggml.a",
+      "runtimeFiles": []
+    },
+    "vgsubtitle::@6890427a1f51a3e7e1df": {
+      "artifactName": "vgsubtitle",
+      "abi": "x86",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\build\\intermediates\\cxx\\Debug\\nz4n4x34\\obj\\x86\\libvgsubtitle.so",
+      "runtimeFiles": []
+    },
+    "ggml-base::@fe13e92dabd0655ddef2": {
+      "artifactName": "ggml-base",
+      "abi": "x86",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86\\whisper-build\\ggml\\src\\libggml-base.a",
+      "runtimeFiles": []
+    },
+    "ggml-cpu::@fe13e92dabd0655ddef2": {
+      "artifactName": "ggml-cpu",
+      "abi": "x86",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\nz4n4x34\\x86\\whisper-build\\ggml\\src\\libggml-cpu.a",
+      "runtimeFiles": []
+    }
+  }
+}

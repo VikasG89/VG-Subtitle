@@ -1,0 +1,11 @@
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\CMakeLists.txt
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\CMakeLists.txt
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\cmake\build-info.cmake
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\cmake\parakeet-config.cmake.in
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\cmake\whisper-config.cmake.in
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\ggml\CMakeLists.txt
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\ggml\cmake\common.cmake
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\ggml\cmake\ggml-config.cmake.in
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\ggml\src\CMakeLists.txt
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\ggml\src\ggml-cpu\CMakeLists.txt
+D:\Codex Projects\VG Subtitle Audio AI Engine\vgsubtitle\src\main\cpp\whisper.cpp\src\CMakeLists.txt

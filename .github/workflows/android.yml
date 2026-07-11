@@ -1,0 +1,41 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: recursive
+
+    - name: set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Static Analysis (Lint)
+      run: ./gradlew :vgsubtitle:lintDebug
+
+    - name: Build with Gradle
+      run: ./gradlew :vgsubtitle:assembleDebug
+
+    - name: Run Unit Tests
+      run: ./gradlew :vgsubtitle:testDebugUnitTest
+
+    - name: Upload AAR
+      uses: actions/upload-artifact@v4
+      with:
+        name: vgsubtitle-debug
+        path: vgsubtitle/build/outputs/aar/*.aar

@@ -1,0 +1,80 @@
+{
+  "buildFiles": [
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\cmake\\build-info.cmake",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\cmake\\parakeet-config.cmake.in",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\cmake\\whisper-config.cmake.in",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\cmake\\common.cmake",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\cmake\\ggml-config.cmake.in",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\src\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\ggml\\src\\ggml-cpu\\CMakeLists.txt",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\src\\main\\cpp\\whisper.cpp\\src\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\gurav\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\gurav\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "ggml::@fe13e92dabd0655ddef2": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ggml",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a\\whisper-build\\ggml\\src\\libggml.a"
+    },
+    "ggml-base::@fe13e92dabd0655ddef2": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ggml-base",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a\\whisper-build\\ggml\\src\\libggml-base.a"
+    },
+    "ggml-cpu::@fe13e92dabd0655ddef2": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "ggml-cpu",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a\\whisper-build\\ggml\\src\\libggml-cpu.a"
+    },
+    "parakeet::@5c4c08eb26cb9fe5feee": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "parakeet",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a\\whisper-build\\src\\libparakeet.a"
+    },
+    "vgsubtitle::@6890427a1f51a3e7e1df": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "vgsubtitle",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\build\\intermediates\\cxx\\Debug\\6i6c6g5t\\obj\\arm64-v8a\\libvgsubtitle.so",
+      "runtimeFiles": []
+    },
+    "whisper::@5c4c08eb26cb9fe5feee": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "whisper",
+      "output": "D:\\Codex Projects\\VG Subtitle Audio AI Engine\\vgsubtitle\\.cxx\\Debug\\6i6c6g5t\\arm64-v8a\\whisper-build\\src\\libwhisper.a"
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "C:\\Users\\gurav\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "C:\\Users\\gurav\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

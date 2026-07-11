@@ -1,0 +1,37 @@
+# ninja log v5
+34	709	8052075451045326	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-alloc.c.o	5a177648cb93d014
+127	1421	8052075458705305	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.c.o	739b094459d2a853
+9	1599	8052075460405258	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml.c.o	c6ad0b6bd3c47b46
+1599	1775	8052075462525266	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/hbm.cpp.o	1442841e47488e65
+79	1911	8052075463535260	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-quants.c.o	a31571714114f608
+54	2380	8052075468295279	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-threading.cpp.o	2048d3174ecb0eaa
+24	2835	8052075472875287	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml.cpp.o	321e9310a1d7383a
+2386	3046	8052075474995324	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/quants.c.o	bf9d009d326f3a90
+105	3213	8052075476615302	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ggml-cpu.cpp.o	4f2c2fee73e60f75
+138	3255	8052075477095255	whisper-build/ggml/src/CMakeFiles/ggml.dir/ggml-backend-dl.cpp.o	c0e611d17bb62286
+17	3325	8052075477665270	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend.cpp.o	cc276b9c7c7156dd
+1	3848	8052075482605287	CMakeFiles/vgsubtitle.dir/vgsubtitle.cpp.o	2ac638e221414159
+1422	4008	8052075484475294	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/mmq.cpp.o	9dab9fa29e04bf9f
+1911	4176	8052075485305288	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/traits.cpp.o	af434247eec8793d
+117	4301	8052075487365289	whisper-build/ggml/src/CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o	3853346b1ef5c550
+42	4312	8052075487345261	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-opt.cpp.o	e8990fb9050e6bb1
+1775	4421	8052075488755289	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/amx/amx.cpp.o	50f187485385d80d
+3256	4616	8052075490575279	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/quants.c.o	4458db06e16cc5ce
+711	5182	8052075496105297	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/repack.cpp.o	3bc305615905b8b4
+3325	5343	8052075498095264	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/vec.cpp.o	fef81ab78329c187
+65	5408	8052075498295265	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/ggml-backend-meta.cpp.o	15cdd18073d7002f
+94	5553	8052075499685283	whisper-build/ggml/src/CMakeFiles/ggml-base.dir/gguf.cpp.o	934af00172048978
+5554	5742	8052075501845262	whisper-build/ggml/src/libggml-base.a	3f7c918a86392179
+3213	5772	8052075502245261	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/binary-ops.cpp.o	8cb3a1db4df1164e
+3848	5797	8052075502595265	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/arch/arm/repack.cpp.o	c85fe475ef84747b
+2836	6305	8052075507595260	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/unary-ops.cpp.o	a2ef65655d8e1593
+3046	6873	8052075513165250	whisper-build/ggml/src/CMakeFiles/ggml-cpu.dir/ggml-cpu/ops.cpp.o	8c68fb293498dc43
+6874	6986	8052075514475273	whisper-build/ggml/src/libggml-cpu.a	65b9b2b126e5b0c9
+6986	7065	8052075515295283	whisper-build/ggml/src/libggml.a	1f9a13f95dbda80b
+4008	11486	8052075558745260	whisper-build/src/CMakeFiles/whisper.dir/whisper.cpp.o	4de9cf1e5d9b5339
+11486	11564	8052075560295231	whisper-build/src/libwhisper.a	f1347b20310d512d
+11564	11711	8052075561615248	D:/Codex Projects/VG Subtitle Audio AI Engine/vgsubtitle/build/intermediates/cxx/Debug/nz4n4x34/obj/armeabi-v7a/libvgsubtitle.so	ed789e3964932ad2
+13	1510	8052095345867681	CMakeFiles/vgsubtitle.dir/vgsubtitle.cpp.o	2ac638e221414159
+1511	1755	8052095348057683	D:/Codex Projects/VG Subtitle Audio AI Engine/vgsubtitle/build/intermediates/cxx/Debug/nz4n4x34/obj/armeabi-v7a/libvgsubtitle.so	ed789e3964932ad2
+12	1717	8052100936032318	CMakeFiles/vgsubtitle.dir/vgsubtitle.cpp.o	2ac638e221414159
+1717	1974	8052100938302298	D:/Codex Projects/VG Subtitle Audio AI Engine/vgsubtitle/build/intermediates/cxx/Debug/nz4n4x34/obj/armeabi-v7a/libvgsubtitle.so	ed789e3964932ad2

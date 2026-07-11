@@ -1,0 +1,220 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "whisper-build",
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-whisper-build-Debug-ff18eea1c031a31b721d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "whisper.cpp"
+				},
+				{
+					"build" : "whisper-build/ggml",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-whisper-build.ggml-Debug-7d0bc1e619ab93178094.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 2,
+					"source" : "whisper.cpp/ggml"
+				},
+				{
+					"build" : "whisper-build/ggml/src",
+					"childIndexes" : 
+					[
+						4
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-whisper-build.ggml.src-Debug-3285da6dd03c763ae619.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "whisper.cpp/ggml/src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"build" : "whisper-build/ggml/src/ggml-cpu",
+					"jsonFile" : "directory-whisper-build.ggml.src.ggml-cpu-Debug-b8aa3fe9fd7c21291833.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "whisper.cpp/ggml/src/ggml-cpu"
+				},
+				{
+					"build" : "whisper-build/src",
+					"jsonFile" : "directory-whisper-build.src-Debug-f2023ccd9dec538e777c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "whisper.cpp/src",
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vgsubtitle",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"childIndexes" : 
+					[
+						2
+					],
+					"directoryIndexes" : 
+					[
+						1,
+						5
+					],
+					"name" : "whisper.cpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4
+					],
+					"name" : "ggml",
+					"parentIndex" : 1,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml::@fe13e92dabd0655ddef2",
+					"jsonFile" : "target-ggml-Debug-b08e4135e750ba49ec98.json",
+					"name" : "ggml",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-base::@fe13e92dabd0655ddef2",
+					"jsonFile" : "target-ggml-base-Debug-7d44b15aa9ceeff46867.json",
+					"name" : "ggml-base",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "ggml-cpu::@fe13e92dabd0655ddef2",
+					"jsonFile" : "target-ggml-cpu-Debug-5b17f7142f96663a2b9e.json",
+					"name" : "ggml-cpu",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "parakeet::@5c4c08eb26cb9fe5feee",
+					"jsonFile" : "target-parakeet-Debug-381c6e4d473db40871c2.json",
+					"name" : "parakeet",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vgsubtitle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vgsubtitle-Debug-9c25087e93218366c0a8.json",
+					"name" : "vgsubtitle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "whisper::@5c4c08eb26cb9fe5feee",
+					"jsonFile" : "target-whisper-Debug-9e2e7981f8971c2b95bc.json",
+					"name" : "whisper",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Codex Projects/VG Subtitle Audio AI Engine/vgsubtitle/.cxx/Debug/nz4n4x34/armeabi-v7a",
+		"source" : "D:/Codex Projects/VG Subtitle Audio AI Engine/vgsubtitle/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

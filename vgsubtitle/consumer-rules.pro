@@ -1,0 +1,3 @@
+-keep class com.vg.subtitle.api.** { *; }
+-keep class com.vg.subtitle.recognizer.Segment { *; }
+-keep class com.vg.subtitle.database.SubtitleTask { *; }
