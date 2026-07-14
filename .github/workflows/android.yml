@@ -35,7 +35,7 @@ jobs:
       run: ./gradlew :vgsubtitle:testDebugUnitTest
 
     - name: Upload AAR
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: vgsubtitle-debug
         path: vgsubtitle/build/outputs/aar/*.aar
